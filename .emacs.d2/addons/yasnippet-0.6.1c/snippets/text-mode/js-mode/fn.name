@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+#contributor : Sebastian Wallin
+#name : function - named
+# --
+function $1 ($2) {
+  $0
+}

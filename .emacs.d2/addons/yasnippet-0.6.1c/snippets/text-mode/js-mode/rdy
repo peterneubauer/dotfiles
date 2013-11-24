@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+#contributor : Sebastian Wallin
+#name : jQuery document ready
+# --
+\$(document).ready(function() {
+  $0
+});

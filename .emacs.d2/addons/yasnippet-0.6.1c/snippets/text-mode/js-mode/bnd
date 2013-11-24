@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+#contributor : Sebastian Wallin
+#name : jQuery bind
+# --
+\$(document).bind("$1", function() {
+  $0
+});
