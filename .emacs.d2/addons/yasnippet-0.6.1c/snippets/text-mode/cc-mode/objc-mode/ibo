@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# key: ibo
-# name: IBOutlet
-# --
-@property (retain, nonatomic) IBOutlet ${1:SomeClass} *${2:someName};
