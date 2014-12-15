@@ -1,0 +1,29 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost 
+
+
+104.131.239.172	gs-node-2
+162.243.97.114	gs-node-1
+107.170.48.153	gs-ha
+
+54.171.240.125	es-node-1
+54.171.56.52	es-node-2
+54.72.34.125	es-node-3
+
+192.241.241.67	els-node-11
+107.170.69.100 	els-node-2
+107.170.4.138	els-node-3
+104.131.222.40	els-node-4
+104.131.224.122	els-ha
+
+162.243.202.20  gudrun-nimbus
+162.243.85.210  gudrun-node-1
+104.131.227.225 gudrun-node-2
+54.229.50.250   importer
