@@ -48,5 +48,12 @@ source /opt/boxen/env.sh
 # Customize to your needs...
 
 export BOXEN_CHEF_USER=$USER
-export JAVA_HOME=`/usr/libexec/java_home`
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Postgres.app/Contents/MacOS/bin
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+ssh-add ~/.ssh/id_rsa_old_mbp
+export EDITOR=vim
+export MAPILLARY_CLUSTER_DIR=/Users/peterneubauer/src/mapillary_cluster
+export AWS_ACCESS_KEY_ID=AKIAJSPVOPLYVHIQYWNQ
+export AWS_SECRET_ACCESS_KEY=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

@@ -9,21 +9,49 @@
 ::1             localhost 
 
 
-104.131.239.172	gs-node-2
-162.243.97.114	gs-node-1
+52.17.225.150	gs-node-2
+52.16.168.218	gs-node-1
+52.16.72.19      gs-node-3
 107.170.48.153	gs-ha
 
-54.171.240.125	es-node-1
-54.171.56.52	es-node-2
-54.72.34.125	es-node-3
+52.16.209.60    es-node-1
+52.17.57.180	es-node-2
+52.17.147.228	es-node-3
 
-192.241.241.67	els-node-11
-107.170.69.100 	els-node-2
-107.170.4.138	els-node-3
-104.131.222.40	els-node-4
-104.131.224.122	els-ha
+52.17.8.120     arcgis-server
+52.17.139.168   els-cluster-1-node-1
+52.17.224.102   els-cluster-1-node-2
+52.17.251.38    els-cluster-1-node-3
+52.17.218.22    els-cluster-1-node-4
+52.17.220.154   els-cluster-1-node-5
+54.72.63.102    els-cluster-1-node-r1
+52.17.15.249   logstash-node-1
+52.17.100.35    logstash-node-2
+52.17.160.159   logstash-node-3
 
-162.243.202.20  gudrun-nimbus
-162.243.85.210  gudrun-node-1
-104.131.227.225 gudrun-node-2
-54.229.50.250   importer
+162.243.202.20 g-nimbus
+162.243.85.210 g-node-1
+104.131.227.225 g-node-2
+162.243.226.23 g-node-3
+
+
+52.17.211.40  gudrun-nimbus
+52.17.71.172 gudrun-node-1
+54.72.16.189 gudrun-node-2
+52.17.149.61 gudrun-node-3
+54.171.134.238 api-proxy
+107.170.65.237 riemann
+
+54.77.136.182  tiles
+54.229.155.46  rabbitmq2
+54.194.212.138 eventsource
+54.171.134.238 api-proxy
+
+54.154.42.222 ip32
+54.72.171.180 ip21
+
+104.131.243.118 chef-server
+54.154.246.232 geoserver
+45.55.185.193 mesos-test
+
+162.243.62.100 docker-builder
