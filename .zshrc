@@ -56,7 +56,6 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Pos
 
 export EDITOR=vim
 export MAPILLARY_CLUSTER_DIR=~/src/mapillary_cluster
-export GITHUB_TOKEN=aacc5ef255c14fa061158b5447e444cec60a3519
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_212`
 export PATH=$PATH:~/src/mapillary_cluster/bin
 export MAPILLARY_PRODUCTION_REDIS_HOST=redis.mapillary.io
