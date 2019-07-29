@@ -5,7 +5,13 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+
+# Install powerline fonts for agnoster
+# git clone https://github.com/powerline/fonts.git
+# $ cd fonts
+# $ ./install.sh
+
+ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -40,20 +46,23 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew knife mvn sublime vagrant osx ruby rails bundleri zsh-syntax-highlighting)
+plugins=(git brew osx zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-source /opt/boxen/env.sh
 
 # Customize to your needs...
 
-export BOXEN_CHEF_USER=$USER
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-ssh-add ~/.ssh/id_rsa_old_mbp
 export EDITOR=vim
-export MAPILLARY_CLUSTER_DIR=/Users/peterneubauer/src/mapillary_cluster
-export AWS_ACCESS_KEY_ID=AKIAJSPVOPLYVHIQYWNQ
-export AWS_SECRET_ACCESS_KEY=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
+export MAPILLARY_CLUSTER_DIR=~/src/mapillary_cluster
+export GITHUB_TOKEN=aacc5ef255c14fa061158b5447e444cec60a3519
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_212`
+export PATH=$PATH:~/src/mapillary_cluster/bin
+export MAPILLARY_PRODUCTION_REDIS_HOST=redis.mapillary.io
+export MAPILLARY_PRODUCTION_REDIS_PORT=6379
+export MAPILLARY_PRODUCTION_REDIS_PASSWORD=715606b509c227290a4550eab6423a63715606b509c227290a4550eab6423a63
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
