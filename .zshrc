@@ -52,11 +52,25 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin
+# export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/Postgres.app/Contents/MacOS/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin
+
+
+
+
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+
 
 export EDITOR=vim
+export VISUAL="vim"
+
+export JAVA_HOME=/usr/lib/jvm/default
 export MAPILLARY_CLUSTER_DIR=~/src/mapillary_cluster
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_212`
+
+export PATH=$PATH:$(ruby -e 'print Gem.user_dir')/bin
+
+export PATH=$MAPILLARY_CLUSTER_DIR/bin:$HOME/Mapillary/internal/bin:~/bin:$PATH
+
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_212`
 export PATH=$PATH:~/src/mapillary_cluster/bin
 export MAPILLARY_PRODUCTION_REDIS_HOST=redis.mapillary.io
 export MAPILLARY_PRODUCTION_REDIS_PORT=6379
