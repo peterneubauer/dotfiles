@@ -46,7 +46,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew osx zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -75,7 +75,11 @@ export PATH=$PATH:~/src/mapillary_cluster/bin
 export MAPILLARY_PRODUCTION_REDIS_HOST=redis.mapillary.io
 export MAPILLARY_PRODUCTION_REDIS_PORT=6379
 export MAPILLARY_PRODUCTION_REDIS_PASSWORD=715606b509c227290a4550eab6423a63715606b509c227290a4550eab6423a63
+export MAPILLARY_GITHUB_TOKEN=5148ceec1cd867cd0e3c42ad711df3b2d4157e22
+#aliases
+alias open='xdg-open'
 
+export PYTHONPATH=../mapillary_messi:.:$PYTHONPATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
