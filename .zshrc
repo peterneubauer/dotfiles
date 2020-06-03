@@ -71,15 +71,14 @@ export PATH=$PATH:$(ruby -e 'print Gem.user_dir')/bin
 export PATH=$MAPILLARY_CLUSTER_DIR/bin:$HOME/Mapillary/internal/bin:~/bin:$PATH
 
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_212`
-export PATH=$PATH:~/src/mapillary_cluster/bin
+export PATH=$PATH:/home/peter/.local/bin:~/src/mapillary_cluster/bin
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 export MAPILLARY_PRODUCTION_REDIS_HOST=redis.mapillary.io
 export MAPILLARY_PRODUCTION_REDIS_PORT=6379
-export MAPILLARY_PRODUCTION_REDIS_PASSWORD=715606b509c227290a4550eab6423a63715606b509c227290a4550eab6423a63
-export MAPILLARY_GITHUB_TOKEN=5148ceec1cd867cd0e3c42ad711df3b2d4157e22
 #aliases
 alias open='xdg-open'
 
-export PYTHONPATH=../mapillary_messi:.:$PYTHONPATH
+export PYTHONPATH=~/src/mapillary_ip:~/mapillary_vision:~/src/mapillary_messi:.:$PYTHONPATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
